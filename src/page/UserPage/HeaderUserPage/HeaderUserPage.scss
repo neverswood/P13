@@ -1,0 +1,32 @@
+.header {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.edit-name-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-name-input {
+  margin: 10px;
+  input {
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(232, 240, 254);
+  }
+}
+
+.edit-name-change__save,
+.edit-name-change__cancel,
+.edit {
+  padding: 10px;
+  margin: 0 10px;
+  width: 100px;
+}
+
+@media screen and (max-width: 599px) {
+  .edit-name-inputs {
+    flex-direction: column;
+  }
+}

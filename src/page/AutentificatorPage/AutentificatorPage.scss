@@ -1,0 +1,19 @@
+.sign-in-content {
+  box-sizing: border-box;
+  background-color: white;
+  width: 300px;
+  margin: auto auto;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+}
+
+@media screen and (max-width: 300px) {
+  .sign-in-content {
+    width: 245px;
+  }
+}

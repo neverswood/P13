@@ -1,0 +1,121 @@
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+.bg-dark {
+  display: flex;
+  flex-direction: column;
+  background-color: #12002b;
+  min-height: 572px;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+.main {
+  flex: 1;
+}
+
+.main-nav-item,
+.main-nav-item__signOut {
+  margin-right: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: inherit;
+  color: #2c3e50;
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+
+.sign-in-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+}
+
+.btn {
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 599px) {
+  .bg-dark {
+    min-height: 876px;
+  }
+  .main-nav {
+    padding: 5px 12px;
+  }
+  .main-nav-item {
+    margin: 0;
+    font-size: 11px;
+  }
+  .main-nav-item__signOut {
+    margin: 0;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bg-dark {
+    min-height: 879px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-dark {
+    min-height: 1223px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    min-height: 881px;
+  }
+  .bg-dark {
+    min-height: 1035px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    min-height: 1058px;
+  }
+}
